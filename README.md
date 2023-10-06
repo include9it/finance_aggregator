@@ -24,6 +24,7 @@ Open API specification of SolidBank API: https://shop.stage.klix.app/api/SolidBa
 Request example
 ---
 SolidBank application creation example:
+```
 curl --location --request POST 'https://shop.stage.klix.app/api/SolidBank/applications' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -35,5 +36,9 @@ curl --location --request POST 'https://shop.stage.klix.app/api/SolidBank/applic
 "agreeToBeScored": true,
 "amount": 150.0
 }'
+```
+
 SolidBank application retrieval example:
+```
 curl --location --request GET 'https://shop.stage.klix.app/api/SolidBank/applications/0f1bda7f-e8ee-4815-b110-41fb239eee48'
+```
