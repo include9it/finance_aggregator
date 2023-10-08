@@ -9,7 +9,7 @@ public record Application(
         @Nullable
         Offer offer
 ) {
-    public Application(String id, ApplicationStatus status, String serviceName) {
+    public Application(String serviceName, String id, ApplicationStatus status) {
         this(serviceName, id, status, null);
     }
 }
