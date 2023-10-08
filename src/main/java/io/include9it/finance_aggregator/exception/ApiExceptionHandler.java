@@ -2,6 +2,7 @@ package io.include9it.finance_aggregator.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
@@ -11,8 +12,8 @@ import java.time.ZonedDateTime;
 @ControllerAdvice
 public class ApiExceptionHandler {
 
-    @ExceptionHandler(IllegalStateException.class)
-    public ResponseEntity<ApiException> handleIllegalStateException(IllegalStateException e) {
+    @ExceptionHandler({IllegalStateException.class, HttpMessageNotReadableException.class})
+    public ResponseEntity<ApiException> handleIllegalStateException(Exception e) {
         var badRequest = HttpStatus.BAD_REQUEST;
 
         var exception = new ApiException(
