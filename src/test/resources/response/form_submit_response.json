@@ -1,0 +1,17 @@
+{
+  "id": "3353ed14-6bc2-4d2b-88f3-740f3ab3b06d",
+  "applications": [
+    {
+      "serviceName": "FastBankService",
+      "id": "bbcae20a-2aeb-4941-8ca9-feb5b8cc1fe4",
+      "status": "DRAFT",
+      "offer": null
+    },
+    {
+      "serviceName": "SolidBankService",
+      "id": "7cfa1b8f-b156-412b-b6c7-64c7ec472a82",
+      "status": "DRAFT",
+      "offer": null
+    }
+  ]
+}

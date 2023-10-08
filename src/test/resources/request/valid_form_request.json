@@ -1,0 +1,13 @@
+{
+  "name": "John",
+  "surname": "Doe",
+  "phone": "+37126000000",
+  "email": "john.doe@klix.app",
+  "monthlyIncome": 150.0,
+  "monthlyExpenses": 10.0,
+  "dependents": 0,
+  "maritalStatus": "MARRIED",
+  "agreeToDataSharing": true,
+  "agreeToBeScored": true,
+  "amount": 150.0
+}
